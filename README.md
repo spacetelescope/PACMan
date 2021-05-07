@@ -6,10 +6,10 @@ The Proposal Auto-Categorizer and Manager (PACMan) is a Naive Bayesian routine t
 PACMan is currently under development, and the first release is expected in the summer of 2021.
 
 ### Installation
-1. Clone the 'PACMan' repo
+1. Clone the `PACMan` repo
 Navigate to a directory where you would like PACMan to be located. Then, do the following:
-'git clone https://github.com/spacetelescope/PACMan'
-2. Use scripts in the 'PACMan/scripts' repository
+`git clone https://github.com/spacetelescope/PACMan`
+2. Use scripts in the `PACMan/scripts` repository
 
 ### Software Contributions
 In order to contribute to PACMan, it is best to adhere to the following workflow:
