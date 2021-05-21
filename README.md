@@ -1,14 +1,15 @@
 # PACMan
 The Proposal Auto-Categorizer and Manager (PACMan) is a Naive Bayesian routine that provides tools for science category sorting, panelist selection, and proposal-to-panelist assignments.
 
-
-
 PACMan is currently under development, and the first release is expected in the summer of 2021.
 
 ### Installation
 1. Clone the `PACMan` repo by navigating to a directory where you would like PACMan to be located and doing the following:
 `git clone https://github.com/spacetelescope/PACMan`
-2. Use scripts in the `PACMan/scripts` repository
+2. Create a conda environment with the relevant MacOSX or Linux `yaml` file, eg. `conda env create --file=pacman_osx.yml`.
+3. Install en_core_web_sm with `python3 -m spacy download en_core_web_sm`.
+4. Activate conda environment, eg. `conda activate pacman_macosx`.
+5. Use scripts in the `PACMan/scripts` repository
 
 ### Software Contributions
 In order to contribute to PACMan, it is best to adhere to the following workflow:
