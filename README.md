@@ -25,11 +25,11 @@ In order to contribute to PACMan, it is best to adhere to the following workflow
 
 ### Using Git LFS
 
-Because PACMan utilized numerous large files for training, we recommend using Git's Large File Storage capabilities rather than committing large files directly to Git. This uses pointers so that multiple versions of large files are not stored directly on a local machine when the repo is cloned.
+Because PACMan utilized numerous large files for training, we recommend using Git's `Large File Storage` capabilities rather than committing large files directly to Git. This uses pointers so that multiple versions of large files are not stored directly on a local machine when the repo is cloned.
 
 ##### Steps:
-From within the PACMan conda environemnt (eg, conda activate pacman_osx-3.8), install LFS with brew install git-lfs
-Complete the installation with git lfs install
-In order to tell LFS which files to track, use the command git lfs track FILENAME. It may be useful to request that all .txt, .csv, and .pkl files are tracked, since these tend to be the large files in the PACMan repository. To do so, replace FILENAME with *.txt, *.txtx, *.csv, and *.pkl.
-You should be able to see that changes were made to the .gitattributes file (you can check this with git status.
-Add the .gitattributes file and commit to the repository (eg, git add .gitattributes, and then git commit -m "adding git attributes file")
+1) From within the PACMan conda environemnt (eg, `conda activate pacman_osx-3.8`), install LFS with `brew install git-lfs`
+2) Complete the installation with `git lfs install`
+3) In order to tell LFS which files to track, use the command `git lfs track FILENAME`. It may be useful to request that all `.txt`, `.txtx`, `.csv`, and `.pkl` files are tracked, since these tend to be the large files in the PACMan repository. To do so, replace `FILENAME` with `*.txt`, `*.txtx`, `*.csv`, and `*.pkl`.
+4) You should be able to see that changes were made to the `.gitattributes` file (you can check this with `git status` or, from the main `PACMan` directory, view the file with `open .gitattributes`.
+5) Add the `.gitattributes` file and commit to the repository (eg, `git add .gitattributes`, and then `git commit -m "adding git attributes file"`)
