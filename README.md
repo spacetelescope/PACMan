@@ -36,3 +36,10 @@ Because PACMan utilized numerous large files for training, we recommend using Gi
 
 ### Running PACMan with Various Proposal Systems:
 While PACMan was originally designed for use with Hubble and JWST proposals, we are currently expanding PACMan to be more universal so that it can be applied to a wider variety of proposal systems. We encourage using the configuration file to set up proposal-specific information, and we suggest using a YYYYMMDD prefix to keep track of the proposal cycles. Also, please note that in addition to updating the `config.json` file, different proposal systems will likely require changes to `scripts/get_science_categories.py` because this contains specific information on science categories and translations between new and old science categories that shifted between one cycle and another cycle of the same proposal system. 
+
+### Viewing Pickle Files:
+[Pickle](https://docs.python.org/3/library/pickle.html#) is used by PACMan to convert Python object hierarchies into byte streams. If it would be useful to look at any of the `*.pkl` files, we suggest using the following steps:
+1) In a terminal, change directories to the location of the `.pkl` file (eg, `cd path/to/file`)
+2) Open up ipython (`ipython`)
+3) To use pickle, `import pickle` (The `pickle` package should already be installed in your PACMan environment if you used the `yaml` file installation method above. You may need to do a `conda activate pacman_osx-3.8` to activate the environment)
+4) Read the `pickle` file using `pickle.load(open('filename.pkl','rb'))`
