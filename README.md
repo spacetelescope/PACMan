@@ -51,11 +51,11 @@ Because PACMan utilized numerous large files for training, we recommend using Gi
 4) Read the `pickle` file using `pickle.load(open('filename.pkl','rb'))`
 
 ### Contributors:
-Louis-Gregory Strolger (Space Telescope Science Institute / Johns Hopkins University)
-Teagan King (Space Telescope Science Institute)
-Nathan Miles (University of California, Los Angeles)
-Keith Ceruti II (Baltimore Polytechnic Institute)
-Michelle Ramsahoye (University of Maryland, Baltimore County)
-Brett Blacker (Space Telescope Science Institute)
-Vicente Amado Olivo (Michigan State University)
-Wolfgang Kerzendorf (Michigan State University)
+- Louis-Gregory Strolger (Space Telescope Science Institute / Johns Hopkins University)
+- Teagan King (Space Telescope Science Institute)
+- Nathan Miles (University of California, Los Angeles)
+- Keith Ceruti II (Baltimore Polytechnic Institute)
+- Michelle Ramsahoye (University of Maryland, Baltimore County)
+- Brett Blacker (Space Telescope Science Institute)
+- Vicente Amado Olivo (Michigan State University)
+- Wolfgang Kerzendorf (Michigan State University)
