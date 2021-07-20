@@ -59,3 +59,34 @@ Because PACMan utilized numerous large files for training, we recommend using Gi
 - Brett Blacker (Space Telescope Science Institute)
 - Vicente Amado Olivo (Michigan State University)
 - Wolfgang Kerzendorf (Michigan State University)
+
+### How PACMan works:
+Naive Bayesian classification is a popular and effective method for
+differentiating between types of documents. In contrast to a simple
+frequentist classification, Bayesian classification takes into account
+posterior probability, determined by training on pre-classified data-in
+this case, Hubble science proposals. During training, each proposal of
+known science category is broken down into a 'bag' of its component
+words. As these lists of science words are parsed, the classifier builds
+a probabilistic model for each word using Bayes' Theorem.
+
+#### Robinson's Method
+
+Once the Bayesian classifier is trained, it is ready to parse new,
+unclassified proposals. The data for each word found in a proposal are
+combined using Robinson's Method to form an overall probability that the
+proposal falls into an established category. The formula combines
+p-values from a number of independent tests into one overall p-value
+with chi-squared distribution. The results are normalized, yielding a
+percent likelihood that the proposal belongs in each category.
+
+#### Improvements
+
+Several measures can be taken in order to make the spam classifier even
+more accurate. Words like "a", "the", and "it", which are clearly
+unrelated to science categories, are removed before
+classification. Conversely, words that are almost always found in only
+one science category-"planet" in "Planets", for example-can be used to
+prime PACMan before training.
+
+This project is licensed under the terms of the MIT license.
