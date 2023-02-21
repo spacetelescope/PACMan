@@ -1,0 +1,53 @@
+{
+    "run_name": "testing",
+    "reuse_run":"true",
+    "runs_dir": "./runs",
+    "models_dir": "./models/",
+    "log_folder": "logs",
+    "log_level": "info",
+    "close_collaborator_time_frame": 3,
+    "assignment_number_top_reviewers": 5,
+
+    "train": "false",
+    "categorize_one_cycle": "true",
+    "get_science_categories": "true",
+    "compare_results_real": "true",
+    "duplication_checker": "true",
+    "categorize_ads_reviewers": "true",
+    "cross_validate": "false",
+
+    "duplication_checker_newcycles": "true",
+    "duplication_checker_need_new_texts": "true",
+
+    "modelfile": "strolger_pacman_model_7cycles.joblib",
+    "main_test_cycle": "221022",
+    "past_cycles": ["220325"],
+
+    "help": {
+        "run_name": "Name for specific run of the PACMan code (e.g., 'Telescope_Cycle4b' as an example)",
+        "reuse_run": "If set to 'true', will reuse processed data from existing run of the same name as <run_name>",
+        "runs_dir": "Overarching directory in which all runs and associated products will be stored",
+        "models_dir": "Overarching directory in which all models will be stored",
+        "log_folder": "Sub-folder (within <runs_dir>) within which all logs will be stored",
+
+        "log_level": "Set the level of logs printed to screen; options include 'info', 'debug', 'warning', 'critical'",
+        "close_collaborator_time_frame": "Number of years over which to check close collaborators",
+        "assignment_number_top_reviewers": "number of top recommneded reviewers",
+
+        "train": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "categorize_one_cycle": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "get_science_categories": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "compare_results_real": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "duplication_checker": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "categorize_ads_reviewers": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+        "cross_validate": "if set to 'true', run_pacman will run this script; if 'false', step will be skipped",
+
+        "duplication_checker_need_new_texts": "'true' or 'false', describing whether or not new scraped texts are needed",
+        "duplication_checker_newcycles": "if 'true', generates hashes with new cycles",
+
+        "main_test_cycle": "Prefix used throughout script to match with cycle description, eg. in format 'YYYYMMDD'",
+        "past_cycles": "list of cycle prefixes of past cycles, eg ['20190204', '20160822']",
+
+        "modelfile": "name of model file to use"
+    }
+}
