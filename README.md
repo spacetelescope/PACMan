@@ -3,7 +3,7 @@ The Proposal Auto-Categorizer and Manager (PACMan) is a Naive Bayesian routine t
 
 ### Installation
 1. Clone the `PACMan` repo by navigating to a directory where you would like PACMan to be located and doing the following:
-`git clone https://github.com/strolger/PACMan`.
+`git clone https://github.com/spacetelescope/PACMan`.
 2. Create a conda environment with the relevant MacOSX or Linux `yaml` file, eg. `conda env create --file=pacman_osx_3_8.yml`
 3. Activate conda environment, eg. `conda activate pacman_osx-3.8`.
 4. Install en_core_web_sm with `python3 -m spacy download en_core_web_sm`.
